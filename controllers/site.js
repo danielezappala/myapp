@@ -10,7 +10,7 @@ exports.getHome = (req, res, next) => {
       });
 };
 
-exports.getInit = (req,res) => {
+exports.getInit = (req,res,next) => {
       console.log('creating bulk seasons and programs')
       Season.create(
           { title: '19-20', programs:[{name: 'ECO' },{name: 'SEEDS'}]},
@@ -18,9 +18,11 @@ exports.getInit = (req,res) => {
             include: [Program]
           }
       )
-      .then(seasons => {
-        console.log(res)
-        res.send(season) 
+      .then(seasons =>{
+        console.log('seasons created ' + JSON.stringify(seasons))
+      })
+      .catch(err =>{
+        console.log(err)
       })
     }
 

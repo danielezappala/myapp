@@ -28,4 +28,7 @@ router.get('/', function(req, res, next) {
     res.redirect('home')
   });
 
+// heroku routes
+router.get('/cool', (req, res) => res.send(cool()))
+
 module.exports = router;

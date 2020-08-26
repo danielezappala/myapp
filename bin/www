@@ -9,6 +9,10 @@ var debug = require('debug')('myapp:server');
 var http = require('http');
 const sequelize = require('../util/database');
 
+/* heroku settings 
+const cool = require('cool-ascii-faces');
+*/ 
+
 console.log(sequelize.databaseVersion)
 // sync sequelize
 

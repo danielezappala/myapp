@@ -1,0 +1,30 @@
+<%- include('includes/head.ejs'); %>
+</head>
+
+<%- include('includes/navigation.ejs'); %>
+<main>
+  <h1><%= title %></h1>
+  <p>Totale contatti: <%= contacts.length %></p>
+  <list>
+    <ul class="collapsible">
+      <% for (const [i, contact] of contacts.entries()) { %>
+      <li>
+        <div class="collapsible-header">
+           <span class="title"><%= i+1 %> <%= contact.fullName %></span>
+        </div>
+        <div class="collapsible-body">
+               <ul>
+                  <% for (let contactDetail of contact.contactDetails) { %>
+                  <div class="contact-details">
+                    <li><%= contactDetail.detail_type %>: <%= contactDetail.detail %> </li>
+                  </div>
+                  <% } %>
+              </ul>
+        </div>
+      </li>
+      <% } %>
+    </ul>
+  </list>
+</main>
+
+<%- include('includes/end.ejs'); %>

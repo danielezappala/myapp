@@ -1,0 +1,19 @@
+<%- include('includes/head.ejs'); %>
+</head>
+
+<%- include('includes/navigation.ejs'); %>
+<main>
+  <h1><%= title %></h1>
+  <p>Totale programmi: <%= programs.length %></p>
+  <list>
+    <% for (let program of programs) { %>
+      <element>
+        <ul>
+          <li><%= program.name %></li>
+        </ul>
+      </element>
+    <% } %>
+    </list>
+</main>
+
+<%- include('includes/end.ejs'); %>

@@ -1,10 +1,10 @@
 const Turn = require('../models/turn');
-
-exports.bulkCreateTurns = (programs) => {
+console.log('controller turns')
+exports.bulkCreateTurns = () => {
     Turn.bulkCreate(
         [
-            {name: "A", programId: programs[0].id},
-            {name: "B", programId: programs[0].id},
+            {name: "A", programId: 1},
+            {name: "B", programId: 2},
         ]
     )
     .then(turns=>{

@@ -1,3 +1,5 @@
+console.log('defining model program')
+
 const Sequelize = require('sequelize')
 const sequelize = require('../util/database');
 

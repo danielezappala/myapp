@@ -1,3 +1,5 @@
+console.log('defining model contact detail')
+
 const Sequelize = require('sequelize')
 const sequelize = require('../util/database');
 

@@ -1,10 +1,10 @@
 const Program = require('../models/program');
-
+console.log('controller programs')
 exports.bulkCreatePrograms = () => {
     console.log('creating programs in seasons')
     Program.bulkCreate(
         [
-            { name: 'ECO', seasonID: 1 },
+            { name: 'ECO', seasonId: 1 },
             { name: 'UMANITA', seasonId: 1 }
         ]
     ).then(programs=>{

@@ -1,3 +1,5 @@
+console.log('controller contact')
+
 const Contact = require('../models/contact');
 const ContactDetail = require('../models/contact_detail');
 
@@ -28,7 +30,7 @@ exports.getContacts = (req,res,next) =>{
     )
     .then(contacts =>{
          console.log('rendering contacts ' + contacts)
-        res.render('contacts_list', {
+         res.render('contacts_list', {
             contacts: contacts,
             title: 'Elenco contatti'
           });

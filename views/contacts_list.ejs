@@ -9,9 +9,11 @@
     <ul class="collapsible">
       <% for (const [i, contact] of contacts.entries()) { %>
       <li>
-        <div class="collapsible-header">
+        <div class="collapsible-header"><i class="material-icons iconadd">keyboard_arrow_down</i>
+          <i class="material-icons iconremove">keyboard_arrow_up
+          </i>
            <span class="title"><%= i+1 %> <%= contact.fullName %></span>
-        </div>
+            </div>
         <div class="collapsible-body">
                <ul>
                   <% for (let contactDetail of contact.contactDetails) { %>
@@ -26,5 +28,4 @@
     </ul>
   </list>
 </main>
-
 <%- include('includes/end.ejs'); %>

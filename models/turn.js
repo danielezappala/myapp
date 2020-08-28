@@ -1,3 +1,6 @@
+
+console.log('defining model turn')
+
 const Sequelize = require('sequelize')
 const sequelize = require('../util/database');
 

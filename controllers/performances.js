@@ -1,9 +1,9 @@
 const Performance = require('../models/performance');
-
-exports.bulkCreateProductions = (productions, turns) => {
+console.log('controller performances')
+exports.bulkCreatePerformances = () => {
     Performance.bulkCreate(
         [
-            { productionId: productions[0].id, turnId: turns[0].id, date: "10/13/2020" }
+            { productionId: 1, turnId: 1, date: "10/13/2020" }
         ]
     ).then(performances=>{
         console.log(performances.length + ' performances created')

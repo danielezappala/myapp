@@ -6,6 +6,18 @@
     <main>
       <h1><%= title %></h1>
       <p>Welcome to <%= title %></p>
+      <!--a href="/init" class="btn">Crea dati di prova</a></td-->
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Crea dati di prova</a>
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Gestione abbonamenti</h4>
+      <p>Il database è stato popolato con i dati di prova</p>
+    </div>
+    <div class="modal-footer">
+      <a href="/init" class="modal-action modal-close waves-effect waves-green btn-flat">Chiudi</a>
+    </div>
+  </div>
     </main>
     
     <%- include('includes/end.ejs'); %>

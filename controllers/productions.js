@@ -1,5 +1,5 @@
-const Productions = require('../models/production');
-
+const Production = require('../models/production');
+console.log('controller productions')
 exports.bulkCreateProductions = () => {
     Production.bulkCreate(
         [

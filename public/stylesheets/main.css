@@ -14,6 +14,25 @@ img {
 
 
 /* Materialize */
+
+/* collapsible */
+
+.iconadd{
+  display:inline-block ;
+}
+.iconremove{
+  display:none !important;
+}
+
+li.active .collapsible-header .material-icons.iconadd{
+  display: none;
+}
+
+li.active .collapsible-header .material-icons.iconremove{
+  display: inline-block !important;
+}
+
+
 .btn {
   background-color: #42a5f5
   

@@ -7,10 +7,12 @@
   <p>Totale stagioni: <%= seasons.length %></p>
   <list>
     <ul class="collapsible">
-      <% for (const [i,season of seasons.entries()) { %>
+      <% for (const [i,season] of seasons.entries()) { %>
         <li>
-        <div class="collapsible-header">
-           <span class="title"><%= i+1 %> <%= season.title %></span>
+        <div class="collapsible-header"><i class="material-icons iconadd">keyboard_arrow_down</i>
+          <i class="material-icons iconremove">keyboard_arrow_up
+          </i>
+           <span class="title"><%= i+1 %>  - <%= season.title %></span>
         </div>
         <div class="collapsible-body">
                <ul>

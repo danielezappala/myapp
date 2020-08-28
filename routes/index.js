@@ -3,10 +3,13 @@ var router = express.Router();
 var appRoot = process.env.PWD;
 
 var routeContacts = require('../routes/contacts/contactsList')
+var contactsController = require('../controllers/contacts')
 var membershipPlansController = require('../controllers/memberships')
 var seasonController = require('../controllers/seasons')
 var programController = require('../controllers/programs')
 var turnController = require('../controllers/turns')
+var productionController = require('../controllers/productions')
+var performanceController = require('../controllers/performances')
 var siteController = require('../controllers/site')
 
 /* GET home page. */

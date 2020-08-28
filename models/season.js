@@ -1,3 +1,6 @@
+
+console.log('defining model season')
+
 const Sequelize = require('sequelize')
 const sequelize = require('../util/database');
 

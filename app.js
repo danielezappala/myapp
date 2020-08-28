@@ -8,7 +8,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var contactRouter = require('./routes/contacts/contactsList');
-var initData = require('./util/initData')
+//var initData = require('./util/initData')
 
 
 // app setup
@@ -46,6 +46,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-initData()
 
 module.exports = app;

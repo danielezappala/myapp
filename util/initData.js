@@ -27,12 +27,12 @@ function initData() {
         const seasons = await  siteController.getInit();
         const contacts = await contactController.bulkCreateContacts();
         //const programs = await programController.bulkCreatePrograms(seasons);
-        const membershipPlans = await membershipPlansController.bulkCreateMembershipPlans(programs);
+        const membershipPlans = await membershipPlansController.bulkCreateMembershipPlans();
         const productions = await productionController.bulkCreateProductions();
-        const turns = await turnController.bulkCreateTurns(programs);
-        const performances = await performanceController.bulkCreatePerformances(productions, turns);
-        const memberships = await membershipPlansController.bulkCreateMembership(turns, membershipPlans);
+        const turns = await turnController.bulkCreateTurns();
+        const performances = await performanceController.bulkCreatePerformances();
+        const memberships = await membershipPlansController.bulkCreateMembership();
     })()
 }
 
-module.exports = initData;
+module.exports = initData
